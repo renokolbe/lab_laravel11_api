@@ -4,7 +4,7 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone  laravel_11_api
+git clone https://github.com/renokolbe/lab_laravel11_api laravel_11_api
 ```
 ```sh
 cd laravel_11_api
