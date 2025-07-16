@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\TipoPessoaController;
+use App\Http\Controllers\Api\TipoAnexo\TipoAnexoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 Route::apiResource('tipos-pessoa', TipoPessoaController::class);
+Route::apiResource('tipos-anexo', TipoAnexoController::class);
 
 // Route::get('/', function () {
 //     return response()->json(['message' => 'Welcome to the API!']);

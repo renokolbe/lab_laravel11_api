@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Resources\TipoAnexo;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class TipoPessoaResource extends JsonResource
+class TipoAnexoResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,8 +16,8 @@ class TipoPessoaResource extends JsonResource
     {
         //return parent::toArray($request);
         return [
-            'id' => $this->id_tipo_pessoa,
-            'morango' => $this->ds_tipo_pessoa,
+            'id' => $this->id_tipo_anexo,
+            'morango' => $this->ds_tipo_anexo,
         ];
     }
 }

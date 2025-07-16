@@ -13,7 +13,7 @@ class TipoPessoaController extends Controller
     {
         $tiposPessoa = TipoPessoa::all();
         if ($tiposPessoa->isEmpty()) {
-            return response()->json(['message' => 'No types of person found'], 404);
+            return response()->json(['message' => 'No types of person found'], 200);
         }
         return TipoPessoaResource::collection($tiposPessoa);
     }
