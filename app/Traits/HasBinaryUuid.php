@@ -12,11 +12,6 @@ trait HasBinaryUuid
     public static function bootHasBinaryUuid()
     {
         static::creating(function ($model) {
-            // if (empty($model->{$model->getKeyName()})) {
-            //     $model->{$model->getKeyName()} = DB::raw("UUID_TO_BIN(UUID(), 1)");
-            // }
-            
-            // Só gera o UUID otimizado se o campo estiver realmente vazio
             $key = $model->getKeyName();
 
             if (empty($model->$key)) {

@@ -26,15 +26,15 @@ class Cliente extends Model
     // {
     //     return $this->hasOne(ClientePF::class, 'id_cliente');
     // }
-    protected static function boot()
-    {
-        parent::boot();
+    // protected static function boot()
+    // {
+    //     parent::boot();
 
-        static::creating(function ($model) {
-            if (empty($model->id_cliente)) {
-                $model->id_cliente = DB::raw("UUID_TO_BIN(UUID(), 1)");
-            }
-        });
-    }
+    //     static::creating(function ($model) {
+    //         if (empty($model->id_cliente)) {
+    //             $model->id_cliente = DB::raw("UUID_TO_BIN(UUID(), 1)");
+    //         }
+    //     });
+    // }
 
 }
