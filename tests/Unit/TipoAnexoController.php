@@ -2,9 +2,10 @@
 
 namespace Tests\Unit;
 
+use App\Http\Controllers\Api\TipoAnexo\TipoAnexoController;
 use PHPUnit\Framework\TestCase;
 
-class TipoAnexoController extends TestCase
+class TipoAnexoControllerTest extends TestCase
 {
     /**
      * A basic unit test example.

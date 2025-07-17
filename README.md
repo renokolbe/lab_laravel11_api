@@ -34,3 +34,14 @@ composer install
 
 Acesse o projeto
 [http://localhost/api:8000](http://localhost/api:8000)
+
+## Sugestões de Extensões para o VSCODE
+- PHP Intelephense (Ben Mewburn)
+- Auto Close Tag
+- DotEnv
+- Laravel Snippets
+- phpcs
+- PHPUnit
+- Better PHPUnit
+- Code Spell Checker
+- Brazilian Portuguese
